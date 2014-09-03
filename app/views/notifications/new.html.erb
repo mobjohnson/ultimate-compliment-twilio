@@ -1,0 +1,8 @@
+<h1>Here is the notification form</h1>
+
+<%= form_for @notification do |f| %>
+	<%= f.label :message %>
+	<%= f.text_field :message %>
+
+	<%= f.submit 'Submit', id: 'submit' %>
+<% end %>

@@ -2,7 +2,7 @@ require 'twilio-ruby'
 require_relative '../../credentials'
 
 class Notification
-  attr_accessor :to_number
+  attr_accessor :to_number, :message
 
   def initialize
     account_sid = Credentials.credentials[:twilio_account_sid]
